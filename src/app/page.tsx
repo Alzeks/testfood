@@ -4,91 +4,70 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.imageblock}>
+        <Image src='/main1.png' alt='img'
+          width={1400}
+          height={650}
+        />
+      </div>
+      <div className={styles.shefblock}>
+        <div className={styles.shefblock_text}>
+          <h3 className={styles.shefblock_text_title}>About</h3>
+          <div className={styles.shefblock_text_content}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia maiores sed, iste illo placeat eos cupiditate odio aliquid, ullam excepturi qui necessitatibus autem impedit, blanditiis quisquam culpa earum ipsa.
+          </div>
+          <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae, earum odio, odit, molestiae officia laboriosam doloremque modi sunt debitis quisquam voluptatem voluptas unde ad laborum deserunt! Ipsum, dicta deserunt.</p>
+        </div>
+        <div className={styles.shefblock_img}>
+          <Image src='/shef1.png' alt='img'
+            width={540}
+            height={301}
+          />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <h3 className="menu">Menu</h3>
+      <div className={styles.dishes}>
+        <div className={styles.dishes_item}>
+          <div className={styles.dishes_item_img}>
+            <Image src='/dish1.png' alt='img'
+              width={540}
+              height={301}
+            />
+          </div>
+          <div className={styles.dishes_item_text}>
+            <h3>Pasta</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus fugiat dolore assumenda nihil fuga rem illo sit saepe aliquid officia, dicta tempore, tenetur ea molestiae provident sequi modi adipisci!</p>
+          </div>
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <div className={styles.dishes_item}>
+          <div className={styles.dishes_item_text}>
+            <h3>Rissota</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempore non blanditiis dolore, explicabo labore repellat omnis necessitatibus, atque rem eveniet ullam officiis nulla cupiditate eaque, aspernatur repellendus voluptatem beatae.</p>
+          </div>
+          <div className={styles.dishes_item_img}>
+            <Image src='/dish2.png' alt='img'
+              width={540}
+              height={301}
+            />
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className={styles.dishes_item}>
+          <div className={styles.dishes_item_img}>
+            <Image src='/dish3.png' alt='img'
+              width={540}
+              height={301}
+            />
+          </div>
+          <div className={styles.dishes_item_text}>
+            <h3>Lasanda</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim aliquid obcaecati, sunt magnam nobis quisquam voluptate voluptatibus minus. Ea incidunt modi animi quaerat, nesciunt ex alias vero officiis tempora.</p>
+          </div>
+        </div>
       </div>
     </main>
   );

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2e374a;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+  }
+  
+  .input {
+    width: 500px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    margin: 20px;
+  }
+  
+  .button{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: teal;
+    color: var(--text);
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
