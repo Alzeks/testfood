@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./dishesItem.module.css";
 import Link from "next/link";
-//'http://www.curiousnut.com/roasted-spiced-chicken-ayam-percik/'
 
 export default function DishesItem(props) {
   const item={...props}
