@@ -2,12 +2,11 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import DishesItem from "../components/DishesItem";
 import Search from "../components/Search";
-// Lookup a single random meal   www.themealdb.com/api/json/v1/1/random.php
-//by letter 'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
-//          'https://www.themealdb.com/api/json/v1/1/randomselection.php'
+//api Lookup a single random meal   www.themealdb.com/api/json/v1/1/random.php
+//api by letter 'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
+//api          'https://www.themealdb.com/api/json/v1/1/randomselection.php'
 
 async function getData(option) {
-
   if (!option) { option = 'a' }
   const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${option}`,
     //{cache: "no-store",}
@@ -20,7 +19,6 @@ async function getData(option) {
 
 export default async function Menu({ searchParams }) {
   const q = searchParams?.query || '';
-  
   const data = await getData(q);
 
   return (
