@@ -21,8 +21,6 @@ export default function Search() {
             <input type="text" placeholder="Serch Food" name="value"
                 onChange={hanleSearch}
                 className={styles.input} />
-            {/* <button className={styles.button}
-                onClick={e => hanleSearch(e)}></button> */}
         </div>
     )
 }
